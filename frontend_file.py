@@ -25,8 +25,8 @@ params = {
     'postal': postal,
 }
 
-#response = requests.get(url, params=params).json()
-response = 350000
+response = requests.get(url, params=params).json()
+#response = 350000
 
 st.markdown("""
 
