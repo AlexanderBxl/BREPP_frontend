@@ -21,7 +21,7 @@ params = {
     'bedrooms': bedrooms,
     'bathrooms': bathrooms,
     'living_area': living_area,
-    'surface_of_the_plot ': surface_of_the_plot,
+    'surface_of_the_plot': surface_of_the_plot,
     'postal': postal,
 }
 
