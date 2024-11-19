@@ -6,24 +6,22 @@ API_URL = " https://my-api-app-ltqnoxdklq-ew.a.run.app/"
 st.title("Belgian Real Estate Price Predictor")
 st.write("Estimate the price of a property in Belgium by entering the info below: ")
 
-bedrooms = st.slider('How many bedrooms?', min_value=0, max_value=8, value=1, step=1)
+surface_of_the_plot  =st.number_input('Total surface of plot in m2:',min_value=5,max_value=5000,step=1)
 
 building_condition = st.selectbox("Building condition:",
     ('Good', 'As new', 'Just renovated', 'To renovate', 'To be done up',
        'To restore'))
+
 construction_year =st.number_input('What is the construction year?',min_value=1850,max_value=2023,step=1)
 #double_glazing =st.number_input("Double glazing: Please input one of the following conditions? 1: yes, 0:No",format="%0f"),
 
-double_glazing =st.selectbox("Double glazing: 1: yes, 0: No",(1, 0)),
-
-
 energy_class = st.selectbox("Energy Class:",('A++','A+','A','B',
                                                                               'C','D','E','F','G','Not specified', 'C_B')),
+double_glazing =st.selectbox("Double glazing: 1: yes, 0: No",(1, 0)),
 
 furnished =st.selectbox("Furnished: 1: yes, 0:No",(1, 0)),
 
-
-surface_of_the_plot  =st.number_input('Total surface of plot in m2:',min_value=5,max_value=5000,step=1)
+bedrooms = st.slider('How many bedrooms?', min_value=0, max_value=8, value=1, step=1)
 
 tenement_building =st.selectbox("Is the property part of a tenement building? 1: yes, 0: No",(1, 0)),
 
